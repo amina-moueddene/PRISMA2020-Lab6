@@ -1,0 +1,145 @@
+﻿ID_unique,Auto_decision,A_decision,Decision_finale_SLR,Auto_retenu
+U001,Incertain,Exclu,Excluded (E4),Retenu
+U002,Inclure,Retenu,Included,Retenu
+U003,Exclure,Exclu,Excluded (E2),Exclu
+U004,Exclure,Exclu,Excluded (E7),Exclu
+U005,Incertain,Exclu,Excluded (E3),Retenu
+U006,Incertain,Exclu,Excluded (E2),Retenu
+U007,Exclure,Exclu,Excluded (E3),Exclu
+U008,Exclure,Retenu,Included,Exclu
+U009,Incertain,Exclu,Excluded (E3),Retenu
+U010,Exclure,Exclu,Excluded (E3),Exclu
+U011,Exclure,Exclu,Excluded (E6),Exclu
+U012,Inclure,Retenu,,Retenu
+U013,Inclure,Retenu,Full text not retrieved,Retenu
+U014,Inclure,Retenu,Included,Retenu
+U015,Exclure,Exclu,Excluded (E4),Exclu
+U016,Exclure,Exclu,Excluded (E3),Exclu
+U017,Exclure,Exclu,Excluded (E2),Exclu
+U018,Inclure,Retenu,Excluded (E5),Retenu
+U019,Exclure,Exclu,Excluded (E7),Exclu
+U020,Inclure,Retenu,Full text not retrieved,Retenu
+U021,Exclure,Exclu,Excluded (E4),Exclu
+U022,Inclure,Retenu,Included,Retenu
+U023,Exclure,Exclu,Excluded (E4),Exclu
+U024,Exclure,Exclu,Excluded (E4),Exclu
+U025,Exclure,Exclu,Excluded (E2),Exclu
+U026,Exclure,Retenu,Excluded (E4),Exclu
+U027,Incertain,Exclu,Excluded (E4),Retenu
+U028,Incertain,Retenu,Excluded (E5),Retenu
+U029,Incertain,Exclu,Excluded (E2),Retenu
+U030,Exclure,Retenu,Excluded (E3),Exclu
+U031,Inclure,Retenu,Included,Retenu
+U032,Exclure,Exclu,Excluded (E2),Exclu
+U033,Incertain,Exclu,Excluded (E2),Retenu
+U034,Exclure,Exclu,Excluded (E6),Exclu
+U035,Incertain,Exclu,Excluded (E3),Retenu
+U036,Exclure,Exclu,Excluded (E2),Exclu
+U037,Inclure,Retenu,Included,Retenu
+U038,Incertain,Retenu,Full text not retrieved,Retenu
+U039,Exclure,Exclu,Excluded (E7),Exclu
+U040,Exclure,Exclu,Excluded (E2),Exclu
+U041,Exclure,Exclu,Excluded (E7),Exclu
+U042,Exclure,Exclu,Excluded (E2),Exclu
+U043,Exclure,Exclu,Excluded (E2),Exclu
+U044,Exclure,Exclu,Excluded (E4),Exclu
+U045,Incertain,Exclu,Excluded (E4),Retenu
+U046,Inclure,Retenu,Included,Retenu
+U047,Incertain,Retenu,Included,Retenu
+U048,Incertain,Retenu,Included,Retenu
+U049,Incertain,Retenu,Included,Retenu
+U050,Exclure,Exclu,Excluded (E6),Exclu
+U051,Inclure,Exclu,Excluded (E2),Retenu
+U052,Exclure,Exclu,Excluded (E6),Exclu
+U053,Inclure,Retenu,Full text not retrieved,Retenu
+U054,Inclure,Retenu,Included,Retenu
+U055,Incertain,Retenu,Full text not retrieved,Retenu
+U056,Inclure,Retenu,Included,Retenu
+U057,Exclure,Retenu,Included,Exclu
+U058,Exclure,Exclu,Excluded (E2),Exclu
+U059,Incertain,Retenu,Excluded (E4),Retenu
+U060,Incertain,Exclu,Excluded (E3),Retenu
+U061,Exclure,Exclu,Excluded (E2),Exclu
+U062,Exclure,Exclu,Excluded (E4),Exclu
+U063,Inclure,Retenu,Full text not retrieved,Retenu
+U064,Exclure,Exclu,Excluded (E6),Exclu
+U065,Incertain,Exclu,Excluded (E2),Retenu
+U066,Incertain,Exclu,Excluded (E3),Retenu
+U067,Inclure,Retenu,Excluded (E3),Retenu
+U068,Exclure,Exclu,Excluded (E2),Exclu
+U069,Exclure,Exclu,Excluded (E7),Exclu
+U070,Exclure,Exclu,Excluded (E7),Exclu
+U071,Incertain,Exclu,Excluded (E2),Retenu
+U072,Exclure,Exclu,Excluded (E6),Exclu
+U073,Exclure,Exclu,Excluded (E2),Exclu
+U074,Incertain,Exclu,Excluded (E3),Retenu
+U075,Incertain,Retenu,Excluded (E3),Retenu
+U076,Exclure,Exclu,Excluded (E6),Exclu
+U077,Inclure,Retenu,Full text not retrieved,Retenu
+U078,Exclure,Exclu,Excluded (E6),Exclu
+U079,Inclure,Retenu,Full text not retrieved,Retenu
+U080,Inclure,Retenu,Excluded (E5),Retenu
+U081,Incertain,Exclu,Excluded (E4),Retenu
+U082,Inclure,Retenu,Included,Retenu
+U083,Inclure,Retenu,Included,Retenu
+U084,Inclure,Retenu,Excluded (E3),Retenu
+U085,Exclure,Exclu,Excluded (E2),Exclu
+U086,Exclure,Exclu,Excluded (E6),Exclu
+U087,Exclure,Exclu,Excluded (E2),Exclu
+U088,Exclure,Exclu,Excluded (E2),Exclu
+U089,Incertain,Retenu,Full text not retrieved,Retenu
+U090,Inclure,Exclu,Excluded (E3),Retenu
+U091,Inclure,Retenu,Full text not retrieved,Retenu
+U092,Incertain,Retenu,Excluded (E4),Retenu
+U093,Inclure,Retenu,Full text not retrieved,Retenu
+U094,Exclure,Exclu,Excluded (E2),Exclu
+U095,Inclure,Exclu,Excluded (E3),Retenu
+U096,Incertain,Exclu,Excluded (E3),Retenu
+U097,Inclure,Exclu,Excluded (E6),Retenu
+U098,Exclure,Exclu,Excluded (E2),Exclu
+U099,Exclure,Exclu,Excluded (E2),Exclu
+U100,Exclure,Exclu,Excluded (E2),Exclu
+U101,Incertain,Exclu,Excluded (E3),Retenu
+U102,Incertain,Retenu,Excluded (E3),Retenu
+U103,Incertain,Retenu,Full text not retrieved,Retenu
+U104,Exclure,Exclu,Excluded (E7),Exclu
+U105,Inclure,Exclu,Excluded (E3),Retenu
+U106,Exclure,Exclu,Excluded (E2),Exclu
+U107,Inclure,Retenu,Included,Retenu
+U108,Inclure,Retenu,Included,Retenu
+U109,Exclure,Exclu,Excluded (E7),Exclu
+U110,Inclure,Retenu,Included,Retenu
+U111,Inclure,Exclu,Excluded (E2),Retenu
+U112,Inclure,Retenu,Full text not retrieved,Retenu
+U113,Exclure,Retenu,Full text not retrieved,Exclu
+U114,Inclure,Exclu,Excluded (E3),Retenu
+U115,Inclure,Retenu,Included,Retenu
+U116,Inclure,Retenu,Full text not retrieved,Retenu
+U117,Inclure,Exclu,Excluded (E2),Retenu
+U118,Exclure,Exclu,Excluded (E7),Exclu
+U119,Exclure,Exclu,Excluded (E7),Exclu
+U120,Exclure,Exclu,Excluded (E7),Exclu
+U121,Exclure,Exclu,Excluded (E2),Exclu
+U122,Exclure,Exclu,Excluded (E2),Exclu
+U123,Exclure,Exclu,Excluded (E2),Exclu
+U124,Incertain,Retenu,Included,Retenu
+U125,Exclure,Exclu,Excluded (E7),Exclu
+U126,Exclure,Exclu,Excluded (E2),Exclu
+U127,Incertain,Exclu,Excluded (E6),Retenu
+U128,Exclure,Exclu,Excluded (E2),Exclu
+U129,Exclure,Exclu,Excluded (E3),Exclu
+U130,Incertain,Exclu,Excluded (E2),Retenu
+U131,Incertain,Retenu,Excluded (E5),Retenu
+U132,Incertain,Exclu,Excluded (E4),Retenu
+U133,Inclure,Exclu,Excluded (E2),Retenu
+U134,Inclure,Exclu,Excluded (E2),Retenu
+U135,Inclure,Exclu,Excluded (E3),Retenu
+U136,Inclure,Retenu,Included,Retenu
+U137,Exclure,Exclu,Excluded (E4),Exclu
+U138,Incertain,Retenu,Included,Retenu
+U139,Incertain,Retenu,Excluded (E4),Retenu
+U140,Exclure,Exclu,Excluded (E7),Exclu
+U141,Inclure,Retenu,Included,Retenu
+U142,Incertain,Retenu,Excluded (E5),Retenu
+U143,Exclure,Exclu,Excluded (E7),Exclu
+U144,Incertain,Retenu,Excluded (E4),Retenu

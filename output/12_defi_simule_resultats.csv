@@ -1,0 +1,11 @@
+﻿ID_unique,Titre,Attendu,Obtenu,Conforme,Signaux_de_doute
+S01,Early detection of Xylella fastidiosa in olive orchards with UAV hyperspectral imagery and random forest,Inclure,Inclure,True,
+S02,Airborne thermal imagery and discriminant analysis for Verticillium wilt in olive,Exclure E1,Exclure E1,True,
+S03,Deep learning detection of citrus greening from UAV multispectral images,Exclure E2,Exclure E2,True,
+S04,Counting olive trees from UAV images with YOLO,Exclure E3,Exclure E3,True,
+S05,Smartphone images and a CNN for olive peacock spot classification,Exclure E4,Exclure E4,True,
+S06,Twenty years of drought in olive groves from Sentinel-2 and Landsat NDVI,Exclure E5,Exclure E5,True,
+S07,Remote sensing and machine learning for olive diseases: a review,Exclure E6,Exclure E6,True,
+S08,UAV and deep learning for olive disease monitoring,Exclure E7,Exclure E7,True,
+S09,Detección del estrés hídrico del olivo con drones y aprendizaje automático,Exclure E8,Exclure E8,True,"cible seulement générique (stress, santé)"
+S10,Olive water stress from UAV thermal imagery and leaf measurements,Incertain,Incertain,True,indices de mesures au sol ou sur feuilles; méthode seulement « classification »

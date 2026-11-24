@@ -1,0 +1,29 @@
+{
+ "identifiees": {
+  "Scopus": 118,
+  "Web of Science": 97,
+  "total": 215
+ },
+ "doublons_retires": 71,
+ "references_triees": 144,
+ "exclues_titre_resume": 90,
+ "exclues_titre_resume_par_motif": {
+  "E4": 12,
+  "E2": 36,
+  "E7": 14,
+  "E3": 17,
+  "E6": 11
+ },
+ "rapports_recherches": 54,
+ "rapports_non_recuperes": 15,
+ "rapports_en_attente": 1,
+ "rapports_evalues": 38,
+ "exclus_texte_integral": 15,
+ "exclus_texte_integral_par_motif": {
+  "E5": 5,
+  "E4": 5,
+  "E3": 5
+ },
+ "rapports_inclus": 23,
+ "etudes_incluses": 22
+}

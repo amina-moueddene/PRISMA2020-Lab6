@@ -1,0 +1,88 @@
+LAB 6 - Vérification : réponses aux questions et aux défis
+Revue : Machine learning and remote sensing for disease and stress detection in olive
+
+Les codes d'exclusion de cette revue sont ceux du protocole (config/criteres.json), et non ceux de
+l'exemple Android de l'énoncé :
+  E1 période (avant 2013)            E5 méthode (pas de modèle appris)
+  E2 population (pas l'olivier)       E6 contribution (revue, éditorial)
+  E3 cible (ni maladie ni stress)     E7 type de document (livre, chapitre, actes, préprint...)
+  E4 capteur (pas aérien/satellite)   E8 langue (ni anglais ni français)
+Chaque notice exclue reçoit un seul code : le premier critère non rempli, dans l'ordre E1 à E8.
+
+------------------------------------------------------------------------
+QUESTION 1. Quel code attribuer à une étude qui ne porte pas sur le sujet (Android dans l'énoncé)
+mais utilise une IA ?
+
+Dans l'énoncé : E1 (critère « plateforme Android »).
+Dans cette revue, l'équivalent est une étude qui utilise l'IA mais ne porte pas sur l'olivier : code E2
+(population). Exemple réel : U111 « Remote sensing for the study of climate change... Atacama Desert »
+(télédétection et IA, mais sujet = nappe phréatique) a été exclue E2. Le critère de population est
+vérifié avant le critère de méthode, donc l'utilisation d'une IA ne change pas le code.
+
+------------------------------------------------------------------------
+QUESTION 2. Comment calcule-t-on le pourcentage d'accord simple entre deux évaluateurs ?
+
+Pourcentage d'accord = nombre de références où les deux décisions sont identiques
+                       ÷ nombre total de références évaluées par les deux × 100.
+
+Dans cette revue : 124 accords sur 143 références = 86,7 %.
+Le pourcentage d'accord ne tient pas compte de l'accord dû au hasard ; on calcule donc aussi le kappa
+de Cohen : kappa = (Po − Pe) / (1 − Pe), avec Po = 0,867 et Pe = 0,564 (calculé à partir des marges :
+A retient 53 et exclut 90 ; B retient 36 et exclut 107). Kappa = 0,695, soit un accord substantiel
+(échelle de Landis et Koch). Calcul : scripts/screening.py, fonction cohen_kappa, vérifiée par
+scikit-learn (output/08_accord.json).
+
+------------------------------------------------------------------------
+QUESTION 3. Texte intégral inaccessible après deux tentatives : quel motif ?
+
+Dans l'énoncé : E7.
+Dans cette revue, PRISMA 2020 est appliqué à la lettre : un rapport non récupéré n'est PAS exclu
+pour un motif d'éligibilité, il est compté à part, dans la case « Reports not retrieved » du
+diagramme. 15 rapports sont dans ce cas. Ils sont listés avec leur décision de premier niveau
+(output/09_liste_textes_integraux.csv, statut « Non récupéré »). Notre code E7 désigne le type de
+document (livre, chapitre...) : l'utiliser pour les textes introuvables mélangerait deux raisons
+différentes dans le diagramme.
+
+------------------------------------------------------------------------
+DÉFI 1. Appliquer le script à 10 références simulées
+
+Fichier : data/exemple_simule.csv (10 références inventées pour couvrir une inclusion, un exemple
+par motif E1 à E8 et un cas incertain). Commande : python scripts/defi_simule.py
+Résultat : Inclure 1 ; Exclure 8 ; Incertain 1. Les 10 décisions sont conformes à l'attendu
+(output/12_defi_simule_resultats.csv) :
+  S01 Inclure      S04 Exclure E3   S07 Exclure E6   S10 Incertain (mesures sur feuilles en
+  S02 Exclure E1   S05 Exclure E4   S08 Exclure E7       laboratoire + méthode seulement
+  S03 Exclure E2   S06 Exclure E5   S09 Exclure E8       « classification »)
+
+Appliqué aux 144 vraies références, le même script retient 80 références au lieu des 54 retenues
+par l'évaluatrice (accord 75 %, kappa 0,51). Il retient 21 des 23 rapports finalement inclus, mais il
+en exclut 2 : U008 (Zarco-Tejada 2018) et U057 (Poblete 2023), dont le résumé ne nomme pas
+l'algorithme. Le script peut donc servir à pré-remplir la grille, mais ne doit pas remplacer la
+lecture humaine.
+
+------------------------------------------------------------------------
+DÉFI 2. S042 : A = Inclure, B = Exclure (E2 dans l'énoncé = pas d'IA). Décision finale ?
+
+Dans notre codage, « pas de méthode d'IA » correspond à E5. La règle appliquée dans cette revue est
+la suivante :
+1. Un désaccord au tri titre/résumé ne se tranche pas en suivant un évaluateur par défaut. On
+   envoie la référence au texte intégral, car l'inclusion est l'erreur la moins coûteuse à ce stade.
+2. Sur le texte intégral, on vérifie le point de désaccord : y a-t-il un modèle appris (entraîné et
+   évalué) ou seulement des indices ou des seuils ?
+   - modèle entraîné et évalué : Inclure ;
+   - seulement des indices ou des seuils : Exclure E5, avec la raison écrite.
+3. La décision et sa raison sont consignées (output/08_log_resolutions.txt).
+
+Exemples réels de ce cas dans la revue :
+  - U141 (Daiz 2026) : A Retenu, B Exclu E5, car le résumé ne citait pas de modèle. Le texte
+    intégral montre une classification par SVM : INCLUS.
+  - U028 (super-résolution Sentinel-2) : A Retenu, B Exclu E5. Le texte intégral montre que
+    l'apprentissage profond sert seulement à la super-résolution et que le stress est estimé par un
+    indice : EXCLU E5.
+
+Rôle d'un troisième évaluateur : il lit la référence sans connaître les deux décisions et ne
+tranche que si la discussion entre A et B n'aboutit pas à un consensus. Sa décision est finale et
+consignée avec sa raison. Dans cette revue, il n'y a pas eu de second évaluateur humain ni de
+troisième évaluateur (écart au protocole déclaré dans les limites de la SLR). Le double tri a été
+remplacé par un re-tri à l'aveugle de la même évaluatrice, et les 19 désaccords ont été tranchés
+sur le texte intégral quand il était disponible.

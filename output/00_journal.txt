@@ -1,0 +1,5 @@
+Références chargées (Lab 5) : 144 ; résumés disponibles : oui
+Titre/résumé : 54 retenues, 90 exclues (E2 36, E3 17, E4 12, E6 11, E7 14)
+Double screening : accord 124/143 (86.7 %), kappa 0.695 ; désaccords : 19
+PRISMA : {"identifiees": {"Scopus": 118, "Web of Science": 97, "total": 215}, "doublons_retires": 71, "references_triees": 144, "exclues_titre_resume": 90, "exclues_titre_resume_par_motif": {"E4": 12, "E2": 36, "E7": 14, "E3": 17, "E6": 11}, "rapports_recherches": 54, "rapports_non_recuperes": 15, "rapports_en_attente": 1, "rapports_evalues": 38, "exclus_texte_integral": 15, "exclus_texte_integral_par_motif": {"E5": 5, "E4": 5, "E3": 5}, "rapports_inclus": 23, "etudes_incluses": 22}
+Script vs humain : {"matrice": {"script Incertain / humain Exclu": 20, "script Inclure / humain Retenu": 31, "script Exclure / humain Exclu": 59, "script Exclure / humain Retenu": 5, "script Incertain / humain Retenu": 18, "script Inclure / humain Exclu": 11}, "accord_pct": 75.0, "kappa": 0.514, "inclus_finals_retenus_par_script": "21/23", "inclus_finals_exclus_par_script": ["U008", "U057"], "references_a_lire_si_on_suit_le_script": 80, "avec_resumes": true}

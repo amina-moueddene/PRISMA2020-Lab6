@@ -1,0 +1,32 @@
+{
+ "n": 143,
+ "accords": 124,
+ "accord_pct": 86.7,
+ "kappa": 0.695,
+ "tableau": {
+  "A Exclu / B Exclu": 89,
+  "A Exclu / B Retenu": 1,
+  "A Retenu / B Exclu": 18,
+  "A Retenu / B Retenu": 35
+ },
+ "script_vs_A": {
+  "matrice": {
+   "script Incertain / humain Exclu": 20,
+   "script Inclure / humain Retenu": 31,
+   "script Exclure / humain Exclu": 59,
+   "script Exclure / humain Retenu": 5,
+   "script Incertain / humain Retenu": 18,
+   "script Inclure / humain Exclu": 11
+  },
+  "accord_pct": 75.0,
+  "kappa": 0.514,
+  "inclus_finals_retenus_par_script": "21/23",
+  "inclus_finals_exclus_par_script": [
+   "U008",
+   "U057"
+  ],
+  "references_a_lire_si_on_suit_le_script": 80,
+  "avec_resumes": true
+ },
+ "kappa_sklearn": 0.695
+}

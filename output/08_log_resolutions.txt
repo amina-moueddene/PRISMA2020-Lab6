@@ -1,0 +1,99 @@
+Journal de résolution des désaccords (titre/résumé)
+A = décision assistée par IA et vérifiée par l'évaluatrice ; B = re-tri à l'aveugle par la même évaluatrice.
+Règle : tout désaccord est réexaminé, sur le texte intégral quand il est disponible ; la décision finale est celle de cet examen.
+
+U018 (SLR #101) ssessing olive trees health using vegetation indices and mundi Web services for Sentinel-2
+  A : Retenu | B : Exclu 
+  Motif du désaccord : The abstract describes a Sentinel-2 stress-classification model but states that training and validation will be carried out; a completed empirical evaluation must be confirmed on the full text.
+  Décision finale : Excluded (E5) (Full text) - Vegetation indices only; the SVM model is planned but not implemented
+
+U026 (SLR #15) Canopy analysis and thermographic abnormalities determination possibilities of olive trees
+  A : Retenu | B : Exclu E4
+  Motif du désaccord : The abstract describes a thermographic analysis of olive canopies with data mining but does not state whether images were acquired by UAV, aircraft or satellite.
+  Décision finale : Excluded (E4) (Full text) - Handheld thermal camera (Testo 871) on the ground, no aerial imagery
+
+U028 (SLR #27) Deep-Learning Based Super-Resolution of Sentinel-2 Images for Monitoring Supercentenarian 
+  A : Retenu | B : Exclu E5
+  Motif du désaccord : Deep learning is used to increase Sentinel-2 resolution, but stress appears to be monitored with a spectral index; unclear whether an AI method directly evaluates stress detection.
+  Décision finale : Excluded (E5) (Full text) - AI used only for super-resolution; stress inferred from an index (CRI2) without a learning model or ground truth
+
+U030 (SLR #23) Detection of irrigation malfunctions based on thermal imaging
+  A : Retenu | B : Exclu E3
+  Motif du désaccord : The target is the detection of irrigation malfunctions, not the direct detection of a physiological stress or a disease of olive.
+  Décision finale : Excluded (E3) (Full text) - Airborne thermal imagery, tree water status, random forest (bagging)
+
+U042 (SLR #31) Detecting Xylella fastidiosa in a machine learning framework using Vcmax and leaf biochemi
+  A : Exclu | B : Retenu 
+  Motif du désaccord : Detection of Xylella by machine learning from biochemical traits quantified with airborne hyperspectral imagery.
+  Décision finale : Excluded (E2) (Title/abstract (confirmed on full text)) - Almond only, no olive
+
+U047 (SLR #33) MobiRes-Net: A Hybrid Deep Learning Model for Detecting and Classifying Olive Leaf Disease
+  A : Retenu | B : Exclu E4
+  Motif du désaccord : MobiRes-Net detects diseases on leaf images; no UAV, aircraft or satellite acquisition is described.
+  Décision finale : Included (Full text) - Olive foliar diseases, 5,400 images taken by UAV, CNN (borderline: UAV used at close range)
+
+U059 (SLR #112) Efficient Deep Learning Approach for Olive Disease Classification
+  A : Retenu | B : Exclu E4
+  Motif du désaccord : Disease classification appears to rely on leaf images; no UAV, aircraft or satellite remote sensing is reported.
+  Décision finale : Excluded (E4) (Full text) - Public dataset of leaf photographs (smartphone), no aerial imagery
+
+U063 (SLR #115) IoT Low-Cost Raspberry PI Monitoring System for Agriculture Fields
+  A : Retenu | B : Exclu E4
+  Motif du désaccord : The system uses a webcam/Raspberry Pi for imaging; no UAV, aircraft or satellite acquisition is established in the abstract.
+  Décision finale : Full text not retrieved (Title/abstract (full text not retrieved)) - Olive diseases, CNN embedded on a UAV: real aerial images?
+
+U067 (SLR #40) TEBAKA – A technological platform for Apulian crop monitoring
+  A : Retenu | B : Exclu E3
+  Motif du désaccord : The method classifies land-cover or crop types; it does not detect a disease or stress of olive.
+  Décision finale : Excluded (E3) (Full text) - Land-cover classification (olive groves, vineyards…), no disease or stress target
+
+U075 (SLR #59) Burned Olive Trees Identification with a Deep Learning Approach in Unmanned Aerial Vehicle
+  A : Retenu | B : Exclu E3
+  Motif du désaccord : The target is the identification of trees burned by wildfire, not a disease or physiological stress of olive as defined by the criteria.
+  Décision finale : Excluded (E3) (Full text) - Fire damage, neither disease nor water stress (borderline)
+
+U079 (SLR #124) Hyperspectral plant traits and fluorescence emission dynamics under increasing water stres
+  A : Retenu | B : Exclu E2
+  Motif du désaccord : The abstract addresses hyperspectral responses to stress in several species but does not state that olive is among the species studied.
+  Décision finale : Full text not retrieved (Title/abstract (full text not retrieved)) - Water stress, olive and almond, airborne hyperspectral + thermal, model inversion + machine learning
+
+U080 (SLR #58) Investigating the Impact of Xylella Fastidiosa on Olive Trees by the Analysis of MODIS Ter
+  A : Retenu | B : Exclu E5
+  Motif du désaccord : The MODIS time-series analysis uses Fisher information and Shannon entropy; no learning model is reported.
+  Décision finale : Excluded (E5) (Full text) - Fisher-Shannon + ROC on MODIS, no AI/ML method
+
+U084 (SLR #121) Random Forest and Sentinel-2 Based Approach for Evaluating Climate Change on Olive Trees
+  A : Retenu | B : Exclu E3
+  Motif du désaccord : The study assesses climate-related changes in cover and yield, without direct detection of a disease or physiological stress.
+  Décision finale : Excluded (E3) (Full text) - Olive / other classification for area loss; no stress or disease variable
+
+U092 (SLR #62) An efficient deep-learning model for olive tree diseases diagnosis in Al-Jouf region
+  A : Retenu | B : Exclu E4
+  Motif du désaccord : Deep-learning diagnosis appears to rely on leaf images, with no UAV, aircraft or satellite acquisition reported.
+  Décision finale : Excluded (E4) (Full text) - Leaf photographs (4 leaf classes), no aerial imagery
+
+U131 (SLR #97) Complexity-based metrics for discerning Xylella fastidiosa-infected olive groves in MODIS 
+  A : Retenu | B : Exclu E5
+  Motif du désaccord : The Xylella target and MODIS data are relevant, but the abstract does not confirm that the method is machine learning rather than a statistical complexity analysis.
+  Décision finale : Excluded (E5) (Full text) - Entropy/complexity + ROC, no AI/ML method
+
+U139 (SLR #87) Prediction of vegetation indices from downsampled hyperspectral data using machine learnin
+  A : Retenu | B : Exclu E3
+  Motif du désaccord : The model predicts vegetation indices for crop monitoring, with no explicit disease or stress target.
+  Décision finale : Excluded (E4) (Full text) - Laboratory leaf spectra (dehydration), no aerial imagery
+
+U141 (SLR #85) Spatio-Temporal Assessment of Drought Impacts on Olive Groves Using Sentinel-2 and CHIRPS 
+  A : Retenu | B : Exclu E5
+  Motif du désaccord : The abstract describes a spatio-temporal analysis of Sentinel-2 and CHIRPS data but does not mention a machine-learning model.
+  Décision finale : Included (Full text) - Drought impact on olive (Beni-Amir, Tadla), Sentinel-2 + CHIRPS/SPI, SVM classification of olive-grove degradation
+
+U142 (SLR #95) Systematic Divergence Between NDVI-Based and Energy-Balance Water-Stress Classifications i
+  A : Retenu | B : Exclu E5
+  Motif du désaccord : Water-stress classification relies on NDVI and METRIC/CWSI; no machine-learning model is reported.
+  Décision finale : Excluded (E5) (Full text) - Olive water stress (Landsat, METRIC/CWSI vs NDVI) but fixed thresholds, no AI/ML method
+
+U144 (SLR #81) Toward Smart Agriculture: A Novel Environmentally Enriched Multimodal Deep Learning Framew
+  A : Retenu | B : Exclu E4
+  Motif du désaccord : The multimodal framework appears to use leaf images and environmental variables, without UAV, aircraft or satellite remote sensing.
+  Décision finale : Excluded (E4) (Full text) - Leaf photographs (public dataset) + environmental data, no aerial or satellite imagery of the tree
+
