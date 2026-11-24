@@ -1,0 +1,8 @@
+# Résumés issus des exports Scopus/WoS : diffusion restreinte, à garder en local
+local/*
+!local/README.md
+# Textes intégraux (droits d'auteur)
+pdfs/*
+!pdfs/README.md
+__pycache__/
+venv/
